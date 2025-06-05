@@ -1,0 +1,28 @@
+2025-04-11 23:46:44,439 - INFO - Middleware started for role: caregiver
+2025-04-11 23:46:44,443 - INFO - Loaded input data from data/synthetic_sensor_data.csv
+2025-04-11 23:46:44,445 - INFO - Anonymization applied (room \u2192 room_anon)
+2025-04-11 23:46:44,469 - INFO - Differential Privacy applied to temperature and sound_level
+2025-04-11 23:46:44,496 - INFO - Encryption applied to sound_level_dp
+2025-04-11 23:46:44,496 - INFO - Access control enforced for role: caregiver (columns: ['timestamp', 'room_anon', 'temperature', 'motion', 'sound_level_dp'])
+2025-04-11 23:46:44,501 - INFO - Final filtered data saved to: data/final_output_caregiver.csv
+2025-04-11 23:49:16,181 - INFO - Middleware started for role: visitor
+2025-04-11 23:49:16,185 - INFO - Loaded input data from data/synthetic_sensor_data.csv
+2025-04-11 23:49:16,187 - INFO - Anonymization applied (room \u2192 room_anon)
+2025-04-11 23:49:16,210 - INFO - Differential Privacy applied to temperature and sound_level
+2025-04-11 23:49:16,236 - INFO - Encryption applied to sound_level_dp
+2025-04-11 23:49:16,236 - INFO - Access control enforced for role: visitor (columns: ['timestamp', 'room_anon'])
+2025-04-11 23:49:16,241 - INFO - Final filtered data saved to: data/final_output_visitor.csv
+2025-04-11 23:50:44,117 - INFO - Middleware started for role: admin
+2025-04-11 23:50:44,120 - INFO - Loaded input data from data/synthetic_sensor_data.csv
+2025-04-11 23:50:44,122 - INFO - Anonymization applied (room \u2192 room_anon)
+2025-04-11 23:50:44,145 - INFO - Differential Privacy applied to temperature and sound_level
+2025-04-11 23:50:44,172 - INFO - Encryption applied to sound_level_dp
+2025-04-11 23:50:44,172 - INFO - Access control enforced for role: admin (columns: ['timestamp', 'room', 'temperature', 'motion', 'sound_level'])
+2025-04-11 23:50:44,178 - INFO - Final filtered data saved to: data/final_output_admin.csv
+2025-04-12 00:00:59,617 - INFO - Middleware started for role: researcher
+2025-04-12 00:00:59,620 - INFO - Loaded input data from data/synthetic_sensor_data.csv
+2025-04-12 00:00:59,622 - INFO - Anonymization applied (room \u2192 room_anon)
+2025-04-12 00:00:59,646 - INFO - Differential Privacy applied to temperature and sound_level
+2025-04-12 00:00:59,673 - INFO - Encryption applied to sound_level_dp
+2025-04-12 00:00:59,673 - INFO - Access control enforced for role: researcher (columns: ['timestamp', 'room_anon', 'temperature_dp', 'sound_level_dp'])
+2025-04-12 00:00:59,679 - INFO - Final filtered data saved to: data/final_output_researcher.csv
