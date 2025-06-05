@@ -24,6 +24,7 @@ plt.legend()
 
 plt.tight_layout()
 plt.show()
+plt.savefig("assets/evaluate_dp.png")
 
 # Hitung MSE (utility loss)
 mse_temp = mean_squared_error(original["temperature"], dp["temperature_dp"])
